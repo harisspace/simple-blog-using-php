@@ -653,7 +653,7 @@ footer {
         font-size: 1.1rem;
     }
 
-    img.about-me {
+    .article-container img {
         height: 200px;
     }
 }
