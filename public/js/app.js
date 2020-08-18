@@ -2,8 +2,19 @@
 const navToggle = document.querySelector('.nav-toggle');
 const list = document.querySelector('.container-list');
 const closes = document.querySelectorAll('.nav-toggle i');
+const body = document.body;
+const icon = document.querySelector('div.icon');
+const flash = document.querySelector('div.flash');
+
+
 // eventlistener
 navToggle.addEventListener('click', showMenu);
+
+body.addEventListener('click', function (event) {
+    if (event.target === icon) {
+        flash.style.display = 'none';
+    }
+})
 
 
 
@@ -25,3 +36,11 @@ function showMenu(event) {
         }
     }
 }
+
+// CKeaditor
+ClassicEditor
+    .create(document.querySelector('#editor'))
+    .catch(error => {
+        console.error(error);
+    });
+

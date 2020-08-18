@@ -3,19 +3,19 @@
         <footer>
             <div class="top">
                 <div class="link">
-                    <a href="<?= BASE_URL; ?>/home">Terbaru</a>
+                    <a href="#">Terbaru</a>
                 </div>
             </div>
 
             <div class="midle">
                 <div class="social-media">
-                    <a target="_blank" href="https://www.instagram.com/hariss.akbar/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hariss.akbar/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
             <div class="bottom">
-                <h5>&copy; HarisAkbar</h5>
-                <p>"If you dont have time to do it RIGHT, what makes you think you'll have time to do it OVER?"</p>
+                <h5>&copy; Haris Akbar</h5>
+                <p>If you dont have time to do it RIGHT, what makes you think you'll have time to do it OVER?</p>
                 <p class="style">Made with <span style="color: #e25555;">&hearts;</span> in Jakarta/ Padang</p>
             </div>
         </footer>

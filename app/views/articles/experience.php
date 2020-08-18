@@ -7,10 +7,10 @@
 
 <div class="wrapper">
     <main>
-        <h3>Terbaru</h3>
+        <h3>Experience</h3>
         <div class="item-container">
 
-            <?php foreach ($data["articles"] as $article) : ?>
+            <?php foreach ($data as $article) : ?>
                 <a href="<?= BASE_URL; ?>/article/<?= $article["id"] ?>" class="item">
                     <img src="<?= BASE_URL; ?>/img/<?= $article["image"] ?>" alt="img">
                     <h4><?= $article["title"] ?></h4>

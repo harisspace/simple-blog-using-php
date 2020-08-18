@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- header admin -->
     <div class="wrapper">
         <nav class="nav">
             <div class="nav-brand">
@@ -17,15 +18,21 @@
             </div>
             <div class="container-list">
                 <ul class="list">
-                    <li><a href="<?= BASE_URL; ?>/home" class="is-white">Home</a></li>
+                    <li><a href="<?= BASE_URL; ?>/home" class="is-white"><i class="fas fa-globe"></i>Public</a></li>
                     <li class="topics-container">
-                        <a href="#" class="is-white topics">Topics</a>
+                        <a href="#" class="is-white topics">Manage</a>
                         <div class="topics-content">
-                            <a href="<?= BASE_URL; ?>/productivity" class="topic">Productivity</a>
-                            <a href="<?= BASE_URL; ?>/experience" class="topic">Experience</a>
+                            <a href="<?= BASE_URL; ?>/manage_article" class="topic">Manage Articles</a>
+                            <a href="<?= BASE_URL; ?>/manage_account" class="topic">Manage Account</a>
+                            <a href="<?= BASE_URL; ?>/manage_topics" class="topic">Manage Topics</a>
                         </div>
                     </li>
-                    <li><a href="<?= BASE_URL; ?>/about" class="is-white">About</a></li>
+                    <li class="topics-container">
+                        <a href="#" class="is-white topics">Username</a>
+                        <div class="topics-content">
+                            <a href="<?= BASE_URL; ?>/logout" class="topic"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="nav-toggle">
