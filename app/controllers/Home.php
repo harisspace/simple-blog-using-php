@@ -15,4 +15,17 @@ class Home extends Controller {
         }
         $this->view('templates/footer');
     }
+
+    public function ajaxHome($keyword) {
+        // data
+        $data["articles"] = $this->model('Article_model')->getArticleByAjax($keyword);
+        $data["users"] = $this->model('User_model')->allData();
+
+        // view
+        if (empty($data["articles"])) {
+            $this->view('error/empty_article');
+        } else {
+            $this->view('search/search', $data);
+        }
+    }
 }

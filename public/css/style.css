@@ -213,6 +213,9 @@ img {
     margin-top: 20px;
     margin: auto;
 }
+.article-paragh a {
+    text-decoration: underline;
+}
 
 .article-container {
     width: 60%;

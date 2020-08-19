@@ -36,4 +36,11 @@ class Article_model {
         $this->db->bind('s', $topic);
         return $this->db->getAllData();
     }
+
+    public function getArticleByAjax($keyword) {
+        $query = "SELECT * FROM {$this->table_name} WHERE title LIKE ? OR topic LIKE ? OR text LIKE ?";
+        $this->db->query($query);
+        $this->db->bind('sss', '%' . $keyword . '%', '%' . $keyword . '%', '%' . $keyword . '%');
+        return $this->db->getAllData();
+    }
 }

@@ -60,6 +60,7 @@ CREATE TABLE `users` (
 --
 
 --
+q:q
 -- Indexes for table `articles`
 --
 ALTER TABLE `articles`

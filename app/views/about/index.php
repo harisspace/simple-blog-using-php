@@ -2,6 +2,7 @@
     <main class="article-container">
         <h2 class="title">About</h2>
         <div class="article-paragh">
+            <img src="<?= BASE_URL; ?>/img/haris.jpg" alt="image" class="article-img">
             <p>Assalamualaikum, haii semua selamat datang!!</p>
             <p>Perkenalkan nama saya Haris, dan saya bukan anak kecil paman... :)</p>
             <p>hahaha... becanda. Jadi saya ngucapin selamat datang untuk temen-temen yang datang ke blog saya ini. Kenapa sih saya bikin blog, nahh saya bikin blog ini cuma ingin membagikan kepada semua apa yang saya dapatkan, baik itu pengalaman, ilmu, tips dan lain-lain.</p>
