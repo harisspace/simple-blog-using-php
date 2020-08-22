@@ -43,4 +43,20 @@ class Article_model {
         $this->db->bind('sss', '%' . $keyword . '%', '%' . $keyword . '%', '%' . $keyword . '%');
         return $this->db->getAllData();
     }
+
+    public function deleteArticle($id) {
+        $query = "DELETE FROM {$this->table_name} WHERE id = ?";
+        $this->db->query($query);
+        $this->db->bind('s', $id);
+        $this->db->execute();
+        return $this->db->affected_rows();
+    }
+
+    public function editArticle($id, $title, $topic, $thumb, $text, $image) {
+        $query = "UPDATE {$this->table_name} SET title = ?, topic = ?, thumbs = ?, text = ?, image = ? WHERE id = $id";
+        $this->db->query($query);
+        $this->db->bind('sssss', $title, $topic, $thumb, $text, $image);
+        $this->db->execute();
+        return $this->db->affected_rows();
+    }
 }
